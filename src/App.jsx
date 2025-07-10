@@ -13,7 +13,7 @@ const App = () => {
       <Navbar />
       <div className="max-w-full mx-auto pt-0 px-0">
         <HeroSection />
-        <FeatureSection />
+        {/* <FeatureSection /> */}
         <ValuesSection />
         {/* <Workflow /> */}
         {/* <Pricing /> */}
