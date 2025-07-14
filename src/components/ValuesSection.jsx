@@ -1,8 +1,13 @@
 const ValuesSection = () => {
   return (
-    <section className="bg-white py-40 px-4">
+    <section className="bg-cover py-20 px-4"
+    style={{
+      backgroundImage: `url('src/assets/BG_Design-01.png')`,
+      backgroundColor: "white",
+      BACKGROUND_SIZE: "cover",
+      backgroundPosition: "center",}}>
       {/* Top Text Section */}
-      <div className="max-w-4xl mx-auto text-left text-gray-800 mb-12">
+      <div className="max-w-4xl mx-auto text-right text-gray-800 mb-12">
         <p className="text-sm">
           At Merveille, we think strategically and act ethically, always driven by purpose.
         </p>
@@ -21,21 +26,22 @@ const ValuesSection = () => {
       <div className="max-w-6xl mx-auto bg-white text-black rounded-3xl shadow-[0_0_30px_rgba(255,174,66,0.3)] p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 border border-neutral-200">
         
         {/* Card 1 */}
-        <div className="flex flex-col items-center text-center px-4">
+        <div className="flex flex-col items-center text-center px-4 ">
           <img src="src\assets\Innovative Solutions-01.png" alt="Innovative Solutions" className="w-12 mb-2" />
           <p className="font-medium">Innovative<br />Solutions</p>
         </div>
 
-        <div className="hidden md:block h-16 border-l border-gray-300" />
+        <div className="hidden md:block h-20 border-l border-gray-300" />
 
         {/* Card 2 */}
-        <div className="flex flex-col items-center text-center px-4 bg-gray-100 rounded-xl py-4">
+        <div className="flex flex-col items-center text-center px-4">
+          <img src="src\assets\Expert Leadership-01.png" alt="Innovative Solutions" className="w-12 mb-2" />
           <p className="font-medium text-sm">
             Decades of wealth<br />management expertise
           </p>
         </div>
 
-        <div className="hidden md:block h-16 border-l border-gray-300" />
+        <div className="hidden md:block h-20 border-l border-gray-300" />
 
         {/* Card 3 */}
         <div className="flex flex-col items-center text-center px-4">
@@ -43,7 +49,7 @@ const ValuesSection = () => {
           <p className="font-medium">Ethical<br />Practices</p>
         </div>
 
-        <div className="hidden md:block h-16 border-l border-gray-300" />
+        <div className="hidden md:block h-20 border-l border-gray-300" />
 
         {/* Card 4 */}
         <div className="flex flex-col items-center text-center px-4">
@@ -51,7 +57,7 @@ const ValuesSection = () => {
           <p className="font-medium">Portfolio<br />Excellence</p>
         </div>
 
-        <div className="hidden md:block h-16 border-l border-gray-300" />
+        <div className="hidden md:block h-20 border-l border-gray-300" />
 
         {/* Card 5 */}
         <div className="flex flex-col items-center text-center px-4">

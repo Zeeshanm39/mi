@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 import ValuesSection from "./components/ValuesSection";
+import InvestmentServices from "./components/InvestmentServices";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <HeroSection />
         {/* <FeatureSection /> */}
         <ValuesSection />
+        <InvestmentServices />
         {/* <Workflow /> */}
         {/* <Pricing /> */}
         {/* <Testimonials /> */}
