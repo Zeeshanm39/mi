@@ -7,6 +7,7 @@ import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 import ValuesSection from "./components/ValuesSection";
 import InvestmentServices from "./components/InvestmentServices";
+import HowMerveilleWorks from "./components/HowMerveilleWorks";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         {/* <Workflow /> */}
         {/* <Pricing /> */}
         {/* <Testimonials /> */}
+        <HowMerveilleWorks />
         <Footer />
       </div>
     </>

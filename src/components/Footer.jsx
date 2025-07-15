@@ -114,7 +114,8 @@ const Footer = () => {
   <span className="">
     Merveille Investments LLC
     <br />
-   📍2501, Marina Plaza, Dubai Marina, UAE
+   {/* 📍2501, Marina Plaza, Dubai Marina, UAE */}
+  2501, Marina Plaza, Dubai Marina, UAE
   </span>
 </p>
           <p className="text-sm flex items-center mb-2">

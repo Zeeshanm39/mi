@@ -33,6 +33,7 @@ const InvestmentServices = () => {
             key={service.id}
             className="relative flex flex-col items-center rounded-2xl py-40 shadow-lg overflow-hidden group"
           >
+            
             {/* Background image overlay shown on hover */}
             <div
               className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
