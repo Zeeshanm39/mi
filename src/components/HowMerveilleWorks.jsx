@@ -26,9 +26,21 @@ const HowMerveilleWorks = () => {
 
   return (
     <section className="bg-white py-16 px-4 md:px-12">
-      <h2 className="text-right text-2xl md:text-3xl font-semibold text-[#B68E2F] mb-20">
+      {/* <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#B68E2F] mb-20">
         How Merveille Works
       </h2>
+       */}
+
+        <div className="flex items-center justify-center my-8">
+      {/* Left line */}
+      <div className="flex-grow h-px bg-gray-300" />
+
+      {/* Center text */}
+      <h2 className="mx-4 text-xl font-semibold text-[#C29351]">How Merveille Works</h2>
+
+      {/* Right line */}
+      <div className="flex-grow h-px bg-gray-300" />
+    </div>
 
       <div className="relative border-l-2 border-[#122044] ml-6 md:ml-12">
         {steps.map((step, index) => (
@@ -63,3 +75,5 @@ const HowMerveilleWorks = () => {
 };
 
 export default HowMerveilleWorks;
+
+

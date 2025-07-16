@@ -24,9 +24,19 @@ const InvestmentServices = () => {
 
   return (
     <div className="text-center py-60">
-      <h1 className="text-xl font-semibold text-[#a48136] mb-8 border-b border-t border-gray-200 inline-block px-4">
+      {/* <h1 className="text-xl font-semibold text-[#a48136] mb-8 border-b border-t border-gray-200 inline-block px-4">
         Our Investment Services
-      </h1>
+      </h1> */}
+        <div className="flex items-center justify-center my-8">
+      {/* Left line */}
+      <div className="flex-grow h-px bg-gray-300" />
+
+      {/* Center text */}
+      <h2 className="mx-4 text-xl font-semibold text-[#C29351]"> Our Investment Services</h2>
+
+      {/* Right line */}
+      <div className="flex-grow h-px bg-gray-300" />
+    </div>
       <div className="grid grid-cols-5 gap-4 py-20 max-w-6xl mx-auto">
         {services.map((service) => (
           <div
