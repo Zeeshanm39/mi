@@ -9,6 +9,7 @@ import ValuesSection from "./components/ValuesSection";
 import InvestmentServices from "./components/InvestmentServices";
 import HowMerveilleWorks from "./components/HowMerveilleWorks";
 import LeadershipSection from "./components/LeadershipSection";
+import FAQSection from "./components/FAQSection";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         {/* <Testimonials /> */}
         <HowMerveilleWorks />
         <LeadershipSection />
+        <FAQSection />
         <Footer />
       </div>
     </>

@@ -67,7 +67,7 @@ const HowMerveilleWorks = () => {
 
         {/* Bottom logo */}
         <div className="flex justify-end mt-10 pr-6">
-          <img src="/logo.png" alt="Merveille Logo" className="w-14 h-14" />
+          <img src="/src/assets/logo.png" alt="Merveille Logo" className="w-14 h-14" />
         </div>
       </div>
     </section>
