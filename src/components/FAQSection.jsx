@@ -65,7 +65,7 @@
 
 // export default FAQSection;
 import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp } from "lucide-react";
 
 const faqData = [
   {
@@ -115,7 +115,7 @@ const FAQSection = () => {
               <span className="text-sm font-medium transition-all duration-300 ease-in-out group-hover:translate-x-1">
                 {item.question}
               </span>
-              {activeIndex === index ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+              {activeIndex === index ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
             </button>
             {activeIndex === index && item.answer && (
               <div className="bg-[#11294D] text-white text-sm px-6 py-4 rounded-b-xl transition-all duration-300 ease-in-out">
