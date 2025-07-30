@@ -1,135 +1,116 @@
-// import { resourcesLinks, platformLinks, communityLinks } from "../constants";
-// const Footer = () => {
-//   return (
-//     <footer className="mt-20 border-t py-10 border-neutral-700">
-//       <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-//         <div>
-//           <h3 className="text-md font-semibold mb-4">Resources</h3>
-//           <ul className="space-y-2">
-//             {resourcesLinks.map((link, index) => (
-//               <li key={index}>
-//                 <a
-//                   href={link.href}
-//                   className="text-neutral-300 hover:text-white"
-//                 >
-//                   {link.text}
-//                 </a>
-//               </li>
-//             ))}
-//           </ul>
-//         </div>
-//         <div>
-//           <h3 className="text-md font-semibold mb-4">Platform</h3>
-//           <ul className="space-y-2">
-//             {platformLinks.map((link, index) => (
-//               <li key={index}>
-//                 <a
-//                   href={link.href}
-//                   className="text-neutral-300 hover:text-white"
-//                 >
-//                   {link.text}
-//                 </a>
-//               </li>
-//             ))}
-//           </ul>
-//         </div>
-//         <div>
-//           <h3 className="text-md font-semibold mb-4">Community</h3>
-//           <ul className="space-y-2">
-//             {communityLinks.map((link, index) => (
-//               <li key={index}>
-//                 <a
-//                   href={link.href}
-//                   className="text-neutral-300 hover:text-white"
-//                 >
-//                   {link.text}
-//                 </a>
-//               </li>
-//             ))}
-//           </ul>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
 
-// export default Footer;
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-  integrity="sha512-dNrP+vB8YfH8t3IDb5iKeL+GpI+dZtV2D+uCqQ4TqJbkbiIpUJK5K+XX+zUOrAf9c1CM5QOQyflMJemK1OimzQ=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
+import {
+  FaTwitter,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
+
 const Footer = () => {
   return (
     <footer
-      className="text-white py-10 px-6"
+      className="text-white px-6 md:px-20 py-10"
       style={{
         background: "linear-gradient(to right, #3b3d40, #b88a39)",
       }}
     >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        {/* Logo Section */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        {/* Logo & Quick Links */}
         <div>
-          <img
-            src="/src/assets/logo.png"
-            alt="Merveille Logo"
-            className="mb-4"
-          />
-          <p className="text-sm font-semibold">UAE | UK | USA</p>
-        </div>
-
-        {/* Quick Links */}
-        <div>
-          <h3 className="font-bold text-lg mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Career</li>
-            <li>Blogs</li>
-            <li>Contact Us</li>
+          <h2 className="text-2xl font-semibold tracking-widest mb-4">
+            Merveille Investments L.L.C
+          </h2>
+          <h3 className="font-semibold text-lg mb-2 text-white">Quick Links</h3>
+          <ul className="text-gray-300 space-y-2">
+            {["About Us", "Services", "Careers", "Contact Us"].map((link, i) => (
+              <li key={i} className="relative group w-max cursor-pointer">
+                <span className="transition duration-300 group-hover:text-sky-950 group-hover:drop-[0_0_5px_white]">
+                  {link}
+                </span>
+                <span className="absolute left-0 bottom-0 h-[2px] w-0  transition-all duration-300 group-hover:w-full" 
+                style={{
+        background: "linear-gradient(to right, #3b3d40, #b88a39)",
+      }}/>
+              </li>
+            ))}
           </ul>
         </div>
 
         {/* Services */}
         <div>
-          <h3 className="font-bold text-lg mb-4">Services</h3>
-          <ul className="space-y-2 text-sm">
-            <li>Retail Trade Enterprise & Development</li>
-            <li>Energy Enterprise & Development</li>
-            <li>Healthcare Enterprise & Development</li>
-            <li>Oil & Natural Gas Projects</li>
-            <li>Commercial Enterprise & Development</li>
+          <h3 className="font-semibold text-lg mb-2 text-white">Services</h3>
+          <ul className="text-gray-300 space-y-2">
+            {[
+              "Retail Trade Enterprise & Development",
+              "Energy Enterprise & Development",
+              "Healthcare Enterprise & Development",
+              "Oil & Natural Gas Projects",
+              "Commercial Enterprise & Development",
+            ].map((service, i) => (
+              <li key={i} className="relative group w-max cursor-pointer">
+                <span className="transition duration-300 group-hover:text-sky-950 group-hover:drop-[0_0_5px_white]">
+                  {service}
+                </span>
+                <span className="absolute left-0 bottom-0 h-[2px] w-0  transition-all duration-300 group-hover:w-full"
+                style={{
+        background: "linear-gradient(to right, #3b3d40, #b88a39)",
+      }} />
+              </li>
+            ))}
           </ul>
         </div>
 
-        {/* Contact Info */}
+        {/* Contact */}
         <div>
-          <h3 className="font-bold text-lg mb-4">Get in touch</h3>
-          <p className="text-sm flex items-start mb-2">
-  <span className="mr-2 mt-1 text-lg text-[#d4a840]">
-    <i className="fas fa-map-marker-alt"></i>
-  </span>
-  <span className="">
-    Merveille Investments LLC
-    <br />
-   {/* 📍2501, Marina Plaza, Dubai Marina, UAE */}
-  2501, Marina Plaza, Dubai Marina, UAE
-  </span>
-</p>
-          <p className="text-sm flex items-center mb-2">
-            <span className="mr-2">📧</span> info@merveilleinvestments.com
-          </p>
-          <p className="text-sm flex items-center mb-4">
-            <span className="mr-2">📞</span> +971 4 512 7000
-          </p>
-          <div className="flex space-x-4 text-[#d4a840] text-xl">
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-linkedin-in"></i>
-            <i className="fab fa-whatsapp"></i>
+          <h3 className="font-semibold text-lg mb-2 text-white">Contact Us</h3>
+          <div className="text-gray-300">
+            <p>
+              <span className="font-semibold text-white">Phone</span> <br />
+              +971 45127000
+            </p>
+            <p className="mt-2">
+              <span className="font-semibold text-white">Email</span> <br />
+              info@merveilleinvestments.com
+            </p>
+            <p className="mt-4 font-semibold text-white">Follow Us</p>
+            <div className="flex space-x-4 mt-2 text-xl">
+              <FaTwitter />
+              <FaFacebookF />
+              <FaLinkedinIn />
+              <FaInstagram />
+            </div>
           </div>
+        </div>
+
+        {/* Address */}
+        <div>
+          <h3 className="font-semibold text-lg mb-2 text-white">Address</h3>
+          <h3 className="font-semibold text-lg mb-2 text-white">Head Office</h3>
+          <p className="text-gray-300">
+            2501, Marina Plaza, Dubai Marina, United Arab Emirates
+          </p>
+        </div>
+      </div>
+
+      {/* Bottom Links */}
+      <div className="mt-10 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between text-sm text-gray-300">
+        <p>© Copyright 2023. All rights reserved by Merveille Investments L.L.C</p>
+        <div className="flex space-x-6 mt-2 md:mt-0">
+          {["Privacy Policy", "Fraud Warning", "Terms of use"].map((item, i) => (
+            <a
+              key={i}
+              href="#"
+              className="relative group w-max cursor-pointer"
+            >
+              <span className="transition duration-300 group-hover:text-sky-950 group-hover:drop-[0_0_5px_white]">
+                {item}
+              </span>
+              <span className="absolute left-0 bottom-0 h-[2px] w-0  transition-all duration-300 group-hover:w-full"
+              style={{
+        background: "linear-gradient(to right, #b88a39,#3b3d40)",
+      }} />
+            </a>
+          ))}
         </div>
       </div>
     </footer>
