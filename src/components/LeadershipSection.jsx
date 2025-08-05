@@ -91,7 +91,7 @@ const LeadershipSection = () => {
       <div className="flex flex-col md:flex-row items-center md:items-start mb-24 relative">
         {/* Image Block with Background */}
         <div className="md:w-1/2 relative">
-          <div className="bg-[#C39B4B] w-[50%] h-[85%] absolute left-0 top-1/2 -translate-y-1/2 rounded-md z-0" />
+          <div className="bg-[#C39B4B] w-[50%] h-[100%] absolute left-0 top-1/2 -translate-y-1/2 rounded-md z-0" />
           <img
             src="src/assets/founder.png" // Replace with actual image path
             alt="Dr. Ahmed Mohamed Rashed"
@@ -122,9 +122,9 @@ const LeadershipSection = () => {
       <div className="flex flex-col md:flex-row items-center md:items-start relative">
         {/* Image Block with Background */}
         <div className="md:w-1/2 md:order-2 relative">
-          <div className="bg-[#0F1B35] w-[55%] h-[80%] absolute right-0 top-1/2 -translate-y-1/2 rounded-md z-0" />
+          <div className="bg-[#0F1B35] w-[50%] h-[100%] absolute right-0 top-1/2 -translate-y-1/2 rounded-md z-0" />
           <img
-            src="src/assets/ceo.png" // Replace with actual image path
+            src="src/assets/Dr.Syed.png" // Replace with actual image path
             alt="Dr. Syed Touseef Ahmed"
             className="relative z-10 w-full max-w-sm mx-auto"
           />
